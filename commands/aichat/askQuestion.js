@@ -12,5 +12,6 @@ module.exports = {
       const question = interaction.options.getString('question')
       const data = await askQuestion(question, interaction.user.username)
       return interaction.reply({ content: data })
+
     }
 }
