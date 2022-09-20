@@ -5,15 +5,15 @@ module.exports = {
         appId: "", // Application id
         guildId: "", // Guild id
         HandlerMode: "Global", // Global or Guild
-       /*
-       TR:
-        Eğer botun slash commandları tüm sunucuda çalışsın istiyorsan HandlerMode "Global" yap.
-        Eğer botun slash commandları sadece belli bir sunucuda istiyorsan HandlerMode "Guild" yap ve guildId'ye sunucunun idsini girin.
-
-       EN:
-        If you want bot's slash command works at all guilds, set HandlerMode to "Global".
-        If you want bot's slash command only works at specific guild, set HandlerMode to "Guild" and set guildId to your guild id.
-       */
+        /*
+        TR:
+         Eğer botun slash commandları tüm sunucuda çalışsın istiyorsan HandlerMode "Global" yap.
+         Eğer botun slash commandları sadece belli bir sunucuda istiyorsan HandlerMode "Guild" yap ve guildId'ye sunucunun idsini girin.
+ 
+        EN:
+         If you want bot's slash command works at all guilds, set HandlerMode to "Global".
+         If you want bot's slash command only works at specific guild, set HandlerMode to "Guild" and set guildId to your guild id.
+        */
         intents: [
             IntentsBitField.Flags.Guilds,
             IntentsBitField.Flags.GuildMembers,
@@ -24,11 +24,11 @@ module.exports = {
             IntentsBitField.Flags.MessageContent
         ],
         scopes: [
-            OAuth2Scopes.Bot, 
+            OAuth2Scopes.Bot,
             OAuth2Scopes.ApplicationsCommands,
         ],
-       },
-    
+    },
+
     api: {
         key: "", // API Anahtarını girin. / Enter API key.
         BrainId: "", // BrainId girin. / Enter BrainId.
@@ -53,5 +53,5 @@ module.exports = {
            Example URL: 'http://api.brainshop.ai/'
         */
     },
-       
+
 }
